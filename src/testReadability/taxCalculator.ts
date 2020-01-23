@@ -14,7 +14,7 @@ export class TaxCalculator {
   public calulate(order:Order, rates:TaxRate[]): number {
 
     // Sum the tax rate
-    // Want can't the caller just pass in the total... IDK!
+    // Why can't the caller just pass in the total... IDK!
     let taxRateSum = rates.reduce((acc,tax) => {
       return acc + tax.rate;
     },0);
